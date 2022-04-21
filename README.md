@@ -1,6 +1,8 @@
 # Dogs
 Project dispaly collection of dog breeds images with transfer into detail page on select
 
+[View preview](https://thumbs.gfycat.com/DecentFailingBillygoat-mobile.mp4)
+
 
 ## Description
 1. App defines own requirements for models as `CollectionItem`. Collection and detail controllers rely on it.
@@ -30,6 +32,3 @@ Project dispaly collection of dog breeds images with transfer into detail page o
 * Xcode >= 13.2.1
 
 * iOS >= 15.2 
-
-[View preview](https://thumbs.gfycat.com/DecentFailingBillygoat-mobile.mp4)
-
