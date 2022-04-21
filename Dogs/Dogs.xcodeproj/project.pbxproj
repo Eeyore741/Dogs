@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF188CB2280C6B8F00F0D60E /* ApplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF188CB1280C6B8F00F0D60E /* ApplicationController.swift */; };
 		EF693792280C1C490011C4F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF693791280C1C490011C4F4 /* AppDelegate.swift */; };
 		EF693794280C1C490011C4F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF693793280C1C490011C4F4 /* SceneDelegate.swift */; };
 		EF69379B280C1C4A0011C4F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF69379A280C1C4A0011C4F4 /* Assets.xcassets */; };
 		EF69379E280C1C4A0011C4F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF69379C280C1C4A0011C4F4 /* LaunchScreen.storyboard */; };
-		EF6937A9280C1C4A0011C4F4 /* DogsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6937A8280C1C4A0011C4F4 /* DogsTests.swift */; };
 		EF6937B3280C1C4A0011C4F4 /* DogsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6937B2280C1C4A0011C4F4 /* DogsUITests.swift */; };
 		EF6937B5280C1C4A0011C4F4 /* DogsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6937B4280C1C4A0011C4F4 /* DogsUITestsLaunchTests.swift */; };
-		EF6937C2280C20D80011C4F4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6937C1280C20D80011C4F4 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF188CB1280C6B8F00F0D60E /* ApplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ApplicationController.swift; path = DOgs/Main/ApplicationController.swift; sourceTree = SOURCE_ROOT; };
 		EF69378E280C1C490011C4F4 /* Dogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF693791280C1C490011C4F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF693793280C1C490011C4F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,11 +42,9 @@
 		EF69379D280C1C4A0011C4F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF69379F280C1C4A0011C4F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF6937A4280C1C4A0011C4F4 /* DogsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF6937A8280C1C4A0011C4F4 /* DogsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsTests.swift; sourceTree = "<group>"; };
 		EF6937AE280C1C4A0011C4F4 /* DogsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF6937B2280C1C4A0011C4F4 /* DogsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsUITests.swift; sourceTree = "<group>"; };
 		EF6937B4280C1C4A0011C4F4 /* DogsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogsUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		EF6937C1280C20D80011C4F4 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +104,6 @@
 		EF6937A7280C1C4A0011C4F4 /* DogsTests */ = {
 			isa = PBXGroup;
 			children = (
-				EF6937A8280C1C4A0011C4F4 /* DogsTests.swift */,
 			);
 			path = DogsTests;
 			sourceTree = "<group>";
@@ -125,7 +122,7 @@
 			children = (
 				EF693791280C1C490011C4F4 /* AppDelegate.swift */,
 				EF693793280C1C490011C4F4 /* SceneDelegate.swift */,
-				EF6937C1280C20D80011C4F4 /* MainViewController.swift */,
+				EF188CB1280C6B8F00F0D60E /* ApplicationController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -272,7 +269,7 @@
 			files = (
 				EF693792280C1C490011C4F4 /* AppDelegate.swift in Sources */,
 				EF693794280C1C490011C4F4 /* SceneDelegate.swift in Sources */,
-				EF6937C2280C20D80011C4F4 /* MainViewController.swift in Sources */,
+				EF188CB2280C6B8F00F0D60E /* ApplicationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +277,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF6937A9280C1C4A0011C4F4 /* DogsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,7 +441,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Dogs/Info.plist;
+				INFOPLIST_FILE = Dogs/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -473,7 +469,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Dogs/Info.plist;
+				INFOPLIST_FILE = Dogs/Support/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
