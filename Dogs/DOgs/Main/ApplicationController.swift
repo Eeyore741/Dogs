@@ -8,11 +8,14 @@
 import Foundation
 import UIKit
 
+/// Type represents application main entrance point, which orchestrates its behaviour (flow)
 final class ApplicationController {
     
-    let navigationController: UINavigationController = UINavigationController()
-    let imageCache: ImageCache = ImageCache.makeWithTotalMegabyteLimit(10)
+    private let navigationController: UINavigationController = UINavigationController()
+    private let imageCache: ImageCache = ImageCache.makeWithTotalMegabyteLimit(10)
     
+    /// Start application flow with window given
+    /// - Parameter window: Window to start with
     func startWithWindow(_ window: UIWindow) {
         window.rootViewController = self.navigationController
         self.navigationController.navigationBar.prefersLargeTitles = true
@@ -26,6 +29,8 @@ final class ApplicationController {
 // MARK: - Private factory helpers
 private extension ApplicationController {
     
+    /// Make items collection controller injected with dog breeds list provider
+    /// - Returns: Items collection controller
     func makeCollectionListController() -> CollectionListController {
         let client = RemoteApiClient()
         let provider = DogBreedsProviderWithRemoteClient(remoteApiClient: client)
@@ -43,6 +48,9 @@ private extension ApplicationController {
         return controller
     }
     
+    /// Make item detail controller injected with random text provider
+    /// - Parameter item: Item to datail presentation
+    /// - Returns: Item detail controller instance
     func makeCollectionDetailControllerWithItem(_ item: CollectionItem) -> CollectionDetailController {
         let provider = RandomTextProvider()
         let viewModel = CollectionDetailViewModelWithDescriptionProvider(item: item, descriptionProvider: provider, imageCache: self.imageCache)
